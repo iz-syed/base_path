@@ -1,0 +1,29 @@
+$font-stack :sans-serif;
+$bodyfont: 'Fira Sans', sans-serif;
+$headfont: 'Roboto Slab', serif;
+$mons: 'Montserrat', sans-serif;
+$awesome: 'FontAwesome';
+
+
+$red :red;
+$green :green;
+$yellow :yellow;
+$blue :blue;
+$gray :gray;
+$white :white;
+$brown :#bb8337;
+
+/* Custom variables and mixins */
+$font : 'Amaranth', sans-serif;
+$size : 16px;
+$wgt : 400;
+$line : 24px;
+$white: #FFF;
+$black: #333;
+$green: #72bf45;
+
+.appear {
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	appearance:none;
+}

@@ -1,0 +1,216 @@
+// Common styles
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, figure, dl, dt, dd { 
+	margin:0; 
+	padding:0; }
+
+body {}
+input:focus, 
+button:focus, 
+select:focus, 
+a:focus, 
+a:focus img, 
+textarea:focus, 
+:focus {
+	outline:none;
+	text-decoration:none; }
+
+textarea {
+	resize:none; }
+
+img { vertical-align:middle; max-width:100%;}
+a {}
+a, a:focus, a:hover{text-decoration:none;}
+input[type="text"], input[type="submit"], 
+input[type="password"] { 
+	display:block; 
+	border-radius:0; 
+	-webkit-appearance:none; 
+	text-align:left; 
+	padding-left:0; }
+
+input[type="submit"] { 
+	text-align:center; }
+
+ol, ul { 
+	list-style:none;
+	
+		li { 
+			list-style-type:none; }
+	 }
+
+
+.clear { 
+	clear:both; }
+
+.floatL { 
+	float:left; }
+
+.floatR {
+	float:right; }
+
+.text-center { 
+	text-align:center; } 
+
+.text-right { 
+	text-align:right; }
+
+.text-left { 
+	text-align:left; }
+
+.text-uppercase { 
+	text-transform:uppercase; }
+
+// Clearfix
+.clearfix {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.block{ 
+	display: block; }
+
+// Type
+p { 
+	padding-bottom:15px; }
+
+.center-block {
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left:0px;
+  padding-right:0px; }
+
+.row .center-block {
+	padding-left:15px;
+	padding-right:15px; }
+
+html { 
+	background-color:antiquewhite; 
+	height: 100vh;}
+
+body { 
+	background-color:antiquewhite; 
+	color:$brown; 
+	font-family:$bodyfont;
+	font-size:$size; 
+	font-weight:$wgt; 
+	line-height:$line; 
+	opacity:0;
+	height: 100vh; }
+
+h1 {
+	font-family:$headfont;
+}
+
+h1 { 
+	color:$brown; 
+	font-size:38px; 
+	line-height:44px; padding-bottom:25px; }
+
+h2 { 
+	color:$brown; 
+	font-size:36px; 
+	line-height:38px; }
+
+h3 { 
+	color:$brown; 
+	font-size:30px; 
+	line-height:46px; }
+
+h4 { 
+	color:$brown; 
+	font-size:20px; 
+	line-height:26px; }
+
+h5 { 
+	color:$brown; 
+	font-size:18px; }
+
+h5 { 
+	color:$brown; 
+	font-size:14px; }
+
+a { 
+	color:$brown; 
+	&:hover { 
+		color:$black; }
+}
+
+.test { border:1px solid red}
+
+// Listing
+.listing {
+	li {
+		&:before {
+			font-family:'FontAwesome';
+			content:'\f101';
+			font-size:$fa-font-size-base;
+			line-height: $fa-line-height-base;
+			margin-right: 25px;
+		}
+
+		// font-size:16px;
+	}
+}
+
+// toogle
+
+.accordion.ui-accordion {
+
+	.ui-accordion-icons { 
+		padding-left:0; }
+
+	.ui-accordion-header { 
+		border:0; 
+		border-bottom:1px solid $brown; 
+		position: relative; 
+		cursor: pointer;  
+		outline:none; 
+
+
+		&:after {
+			content:'\f204'; color:$brown; 
+			font-family:'FontAwesome';
+			font-size:$fa-font-size-base;
+			line-height: $fa-line-height-base;
+			position:absolute; 
+			right:15px;
+			top:15px
+		} // ui-accordion-header:after
+	}
+
+	.ui-accordion-header-active.ui-accordion-header:after { 
+		content:'\f205'; }
+
+	.ui-accordion-content { 
+		padding:15px 0 0; }
+
+	// .ui-state-default { background-color: transparent;}
+	// .ui-widget-content { background-color: transparent; border:0; box-shadow:0 }
+
+
+
+}
+
+
+
+
+
+// .container { margin:0 auto; padding-left:15px; padding-right:15px;}
+@media (max-width: 1024px){
+    // .container{width:auto}
+}

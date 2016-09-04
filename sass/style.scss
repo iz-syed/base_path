@@ -1,0 +1,83 @@
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+// Reset and dependencies
+@import "bootstrap/normalize";
+@import "bootstrap/print";
+
+// Core CSS
+@import "bootstrap/scaffolding"; 
+@import "bootstrap/type";
+@import "bootstrap/code";  
+@import "bootstrap/grid";
+
+// Compass css3 components
+@import "compass/css3";
+
+// CSS3 Animation
+@import "CSS:css/animate";
+// @import "CSS:css/jquery-ui";
+
+// Slick Slider
+@import "slick";
+
+// Font awsome css
+@import "font-awesome/font-awesome";
+
+// Common css
+@import "variables";
+@import "common";
+
+
+/* Basic CSS */
+
+
+.tb-row { display:table;}
+.tb-cell { display:table-cell; vertical-align:middle;}
+
+
+
+// Table
+.tableView {
+  padding:45px 0;
+
+  h1 { 
+    padding-bottom:25px; }
+
+    .tableSite {
+      th, td {
+        border:1px solid $brown; 
+        text-align:center; 
+        padding:15px 10px;
+      }
+
+      th:last-child {
+        text-align: left; 
+        padding-left: 20px;
+      }
+    }
+    
+    .imageAside p:last-of-type { 
+      padding-bottom:0; }
+}
+
+
+
+
+
+// Generic Slide
+.genericSlide { margin:25px 0 35px; max-width: 650px;  margin:0 auto }
+.capImg { font-size:12px; padding-top:5px; }
+
+.triangleArrow .slick-prev, .triangleArrow .slick-next { border:none; cursor:pointer; margin-top:-48px; position:absolute; top:50%; width:39px; }
+.triangleArrow .slick-prev { left:-1px; }
+.triangleArrow .slick-next { right:-1px; text-align:right; }
+
+
+@media screen and (max-width:540px) {
+	.tableSite thead { display:none; }
+	.tableSite td { border:none; display:block; position: relative; padding-left: 40%; text-align: left; }
+	.tableSite td:before { content:attr(data-title); position: absolute; left: 15px; width: 40%; }
+	.tableSite td:last-child { border-bottom:2px solid #d5cdbd; padding-left:40%; width:100%; }
+}

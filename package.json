@@ -1,0 +1,17 @@
+{
+  "name": "Project_Name",
+  "version": "1.0.1",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, harum.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mubarak cc7",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib": "^0.11.0",
+    "grunt-contrib-uglify": "^1.0.2",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
