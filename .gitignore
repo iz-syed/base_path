@@ -1,4 +1,5 @@
 # Ignore Files path #
 ###########
 /.sass-cache
+/node_modules
 
