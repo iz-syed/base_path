@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     uglify: {
       build: {
-        src: ['js/lib/jquery.min.js', 'js/lib/getBrowser.js',  'js/lib/appeared.js', 'js/lib/bootstrap.min.js', 'js/lib/jquery.matchHeight-min.js', 'js/lib/jquery.parallax-1.1.3.js', 'js/lib/jquery-ui.min.js', 'js/lib/slick.min.js', 'js/lib/smoothscroll.js', 'js/main.js'],
+        src: ['js/lib/jquery.min.js', 'js/lib/getBrowser.js', 'js/lib/appeared.js', 'js/lib/bootstrap.min.js', 'js/lib/jquery.matchHeight-min.js', 'js/lib/jquery.parallax-1.1.3.js', 'js/lib/jquery-ui.min.js', 'js/lib/slick.min.js', 'js/lib/smoothscroll.js', 'js/main.js'],
         dest: 'js/build/global.min.js'
       }
     },
