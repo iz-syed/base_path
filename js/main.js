@@ -1,4 +1,5 @@
 $(function(){
+	alert('Hi');
 /* Functions */
 window.onbeforeunload = function(){
 	window.scrollTo(0,0);
@@ -91,6 +92,11 @@ $(function(){
 	
 	});
 
+	// jQueryUI Tabs
+    $( "#tabs" ).tabs();
+
+
+
 	// $( "#files" ).selectmenu();
 
 
@@ -102,6 +108,20 @@ $(function(){
 		}, 1000);
 		return false;
 	});
+
+
+	// Get OS
+	var os = [ 'iphone', 'ipad', 'windows', 'mac', 'linux'];
+
+	// Match OS
+	var match = navigator.appVersion.toLowerCase().match(new RegExp(os.join('|')));
+	// concordinate 
+	var classes = match[0]+' '+$.browser.name+' '+$.browser.version;
+	// add OS + Browser + Version.
+	if (match) {
+		$('body').addClass(classes);
+	};
+
 
 
 });
@@ -116,3 +136,4 @@ $(window).on("orientationchange",function(){
 	
 });
 });
+
