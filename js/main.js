@@ -95,6 +95,9 @@ $(function(){
 	// jQueryUI Tabs
     $( "#tabs" ).tabs();
 
+    // jQueryUI Check box + Radio Boxes
+    $( "input" ).checkboxradio({ icon: false });
+
 
 
 	// $( "#files" ).selectmenu();

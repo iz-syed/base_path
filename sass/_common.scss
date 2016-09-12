@@ -167,10 +167,19 @@ a {
 	}
 }
 
-// toogle
+// Check Box
+.ui-helper-hidden-accessible { display: none;}
+.ui-checkboxradio-label {
+	svg, img { 
+		max-width:30px;
+	}
+} 
+// Radio Box
+
+// Toogle
 
 .accordion.ui-accordion {
-
+	
 	.ui-accordion-icons { 
 		padding-left:0; } // ui-accordion-icons
 

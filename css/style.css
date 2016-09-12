@@ -5985,6 +5985,12 @@ a {
   line-height: 1;
   margin-right: 25px; }
 
+.ui-helper-hidden-accessible {
+  display: none; }
+
+.ui-checkboxradio-label svg, .ui-checkboxradio-label img {
+  max-width: 30px; }
+
 .accordion.ui-accordion .ui-accordion-icons {
   padding-left: 0; }
 .accordion.ui-accordion .ui-accordion-header {
