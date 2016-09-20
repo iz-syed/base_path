@@ -1,5 +1,5 @@
 $(function(){
-	alert('Hi');
+	// alert('Hi');
 /* Functions */
 window.onbeforeunload = function(){
 	window.scrollTo(0,0);
@@ -102,6 +102,13 @@ $(function(){
 
 	// $( "#files" ).selectmenu();
 
+	// Anchor Target _Blank
+	$('a[href$=".pdf"]').attr('target', '_blank');
+	$('a[href$=".ppt"]').attr('target', '_blank');
+	$('a[href$=".doc"]').attr('target', '_blank');
+	$('a[href$=".pptx"]').attr('target', '_blank');
+	$('a[href$=".docx"]').attr('target', '_blank');
+
 
 	/* Scroll to next */
 	$('a.scrollToNext').on('click', function(){
@@ -124,6 +131,22 @@ $(function(){
 	if (match) {
 		$('body').addClass(classes);
 	};
+
+	// Filter Active State
+
+	$('.filter').on('click', 'li', function(){
+    	$('.filter li').removeClass('active');
+    	$(this).addClass('active');
+	});
+
+	/**********************************************\
+	 *	Code Example:
+	 *	<nav class="filter">
+	 *		<li class="active"><a href="javascript:void(0);">Value</a></li>
+	 *		<li><a href="javascript:void(0);">Value</a></li>
+	 *		<li><a href="javascript:void(0);">Value</a></li>
+	 *	</nav>
+	/**********************************************/
 
 
 
