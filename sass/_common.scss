@@ -250,27 +250,36 @@ a {
 
 // input Radio, Checkbox
 
-// [type="radio"] {
-// 	display: none;	
-// }
+.custom-radio, .custom-checkbox { 
+	position:relative; 
+	padding-right:35px;
+	cursor: pointer;
 
-// .ui-helper-hidden-accessible {
-//     border: 0;
-//     clip: rect(0 0 0 0);
-//     height: 1px;
-//     margin: -1px;
-//     overflow: hidden;
-//     padding: 0;
-//     position: absolute;
-//     width: 1px;
-// }
+	&:after { 
+		content:""; 
+		width:15px; 
+		height:15px; 
+		background-color:rgba($brown, 0); 
+		border:3px solid rgba($brown, 1); 
+		@include border-radius(50%);
+		position:absolute; 
+		right:10px; 
+		top:0px;
+	}
+}
 
-// .custom-label {
-// 	border: 1px solid #c5c5c5;
-//     background: #f6f6f6;
-//     font-weight: normal;
-//     color: #454545;
-// }
+.ui-state-active.custom-radio:after,
+.ui-state-active.custom-checkbox:after { 
+	background-color:$brown; 
+	border:3px solid rgba($brown, 0.5); 
+}
+
+.custom-checkbox { 
+	&:after { 
+		@include border-radius(0%);
+	}
+}
+
 
 // .container { margin:0 auto; padding-left:15px; padding-right:15px;}
 @media (max-width: 1024px){

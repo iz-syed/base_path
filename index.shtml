@@ -32,28 +32,31 @@
     <h2>Radio Group</h2>
   <fieldset>
     <legend>Select a Location: </legend>
-    <label for="radio-1" class="custom-label"> New York <img src="images/icons/default/radio-button.svg"> </label>
+    <label for="radio-1" class="custom-radio"> New York </label>
     <input type="radio" name="radio-1" id="radio-1">
-    <label for="radio-2" class="custom-label"> Paris <img src="images/icons/default/radio-button.svg"> </label>
+    <label for="radio-2" class="custom-radio"> Paris </label>
     <input type="radio" name="radio-1" id="radio-2">
-    <label for="radio-3" class="custom-label">London  <img src="images/icons/default/radio-button.svg"></label>
+    <label for="radio-3" class="custom-radio">London </label>
     <input type="radio" name="radio-1" id="radio-3">
   </fieldset>
  
   <h2>Checkbox</h2>
   <fieldset>
     <legend>Hotel Ratings: </legend>
-    <label for="checkbox-1" class="custom-label">2 Star</label>
+    <label for="checkbox-1" class="custom-checkbox">2 Star</label>
     <input type="checkbox" name="checkbox-1" id="checkbox-1">
-    <label for="checkbox-2" class="custom-label">3 Star</label>
+    <label for="checkbox-2" class="custom-checkbox">3 Star</label>
     <input type="checkbox" name="checkbox-2" id="checkbox-2">
-    <label for="checkbox-3" class="custom-label">4 Star</label>
+    <label for="checkbox-3" class="custom-checkbox">4 Star</label>
     <input type="checkbox" name="checkbox-3" id="checkbox-3">
-    <label for="checkbox-4" class="custom-label">5 Star</label>
+    <label for="checkbox-4" class="custom-checkbox">5 Star</label>
     <input type="checkbox" name="checkbox-4" id="checkbox-4">
   </fieldset>
   </div>
   </form>
+
+  <input type="checkbox" name="">
+  <input type="radio" name="">
     
     <p>Nostrum deserunt, blanditiis sunt est quidem, ipsum provident, magni quibusdam laboriosam iusto repudiandae quas deleniti dolores obcaecati assumenda ea voluptate velit voluptatem quasi quaerat! Labore beatae quia laboriosam delectus harum dignissimos nemo, quasi quas incidunt accusantium odio, ipsum ut voluptate, sapiente expedita. Magni error, quod ipsum. Sequi minus rerum quas ullam odio atque quae aspernatur sit totam libero. Non inventore placeat magnam porro tempore perferendis totam explicabo, sit in nam similique ratione. Non iste ipsum esse culpa. Officia numquam nemo aliquid iste maxime, quis voluptates ad et natus incidunt perspiciatis vitae voluptatum facere tempore. Quasi in repudiandae id facere sapiente dolorem nobis officiis eligendi provident soluta itaque alias, explicabo praesentium, inventore odit qui fuga similique recusandae, voluptas officia distinctio molestiae. Velit ipsam autem atque ut, quas rem perferendis, ducimus at sequi nesciunt molestiae quod inventore impedit sed natus nobis magnam. Velit distinctio quod sequi voluptas, saepe cupiditate soluta quo necessitatibus voluptatum quisquam debitis animi numquam, quibusdam. Vero dignissimos consequatur laboriosam ab quibusdam architecto impedit fugiat velit fugit distinctio unde veritatis hic magnam veniam ducimus temporibus consequuntur dicta quos rem, sunt doloribus voluptate alias dolores ea. Veritatis enim, expedita ut ipsa harum quia corrupti quas cum, illum, possimus consectetur dolores adipisci unde autem ea atque sit commodi illo vel, animi similique optio veniam velit. Fugit perspiciatis quas necessitatibus, cum, possimus tempore temporibus minima, labore dolor vitae explicabo quam sequi cumque dignissimos illo dolore laudantium natus vero recusandae quasi inventore saepe vel. Enim libero in, ullam consectetur dolores animi sapiente quia officiis itaque aspernatur dolore cupiditate neque mollitia ad corporis quaerat ipsa vero obcaecati recusandae facilis natus et odio exercitationem. Perspiciatis ad, ab sequi? Sequi voluptatibus architecto voluptates quis hic dolores non impedit iste quia repellat, in consequuntur rem quam cum vero? Cum eius, eos tempore libero sit aperiam voluptates ut nostrum.</p>
     

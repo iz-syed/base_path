@@ -6023,6 +6023,33 @@ a {
       [data-role="tab"] ul li.ui-state-active {
         background-color: rgba(187, 131, 55, 0.8); }
 
+.custom-radio, .custom-checkbox {
+  position: relative;
+  padding-right: 35px;
+  cursor: pointer; }
+  .custom-radio:after, .custom-checkbox:after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: rgba(187, 131, 55, 0);
+    border: 3px solid #bb8337;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: 0px; }
+
+.ui-state-active.custom-radio:after,
+.ui-state-active.custom-checkbox:after {
+  background-color: #bb8337;
+  border: 3px solid rgba(187, 131, 55, 0.5); }
+
+.custom-checkbox:after {
+  -moz-border-radius: 0%;
+  -webkit-border-radius: 0%;
+  border-radius: 0%; }
+
 /* Basic CSS */
 .tb-row {
   display: table; }

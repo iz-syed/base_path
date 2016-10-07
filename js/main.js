@@ -1,5 +1,5 @@
 $(function(){
-	// alert('Hi');
+	 alert('Hi');
 /* Functions */
 window.onbeforeunload = function(){
 	window.scrollTo(0,0);
