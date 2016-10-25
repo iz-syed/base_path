@@ -21,10 +21,10 @@
     <h2>Expert in global health technologies joins as special advisor</h2>
     <h3>Expert in global health technologies joins as special advisor</h3>
     <h4>Expert in global health technologies joins as special advisor</h4>
-    <!-- <h5>Expert in global health technologies joins as special advisor</h5>
-    <h6>Expert in global health technologies joins as special advisor</h6> -->
+    <h5>Expert in global health technologies joins as special advisor</h5>
+    <h6>Expert in global health technologies joins as special advisor</h6>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sit eius adipisci reprehenderit debitis necessitatibus, vitae iusto dolores excepturi id reiciendis pariatur consequatur perspiciatis autem ipsum eveniet harum sapiente, hic impedit error maxime aliquid qui nobis? Officiis tempore suscipit inventore perspiciatis molestiae repellat placeat, ratione atque laboriosam minima tempora ex id magnam nobis voluptates in. Optio harum, dolore iste quisquam natus, odio voluptas pariatur tempore aut debitis error aperiam voluptatibus, iusto nam sunt adipisci quam quis voluptates repellat illum impedit? Deserunt placeat laborum labore natus beatae minima unde, consequuntur repudiandae impedit consequatur eum fugit quas quae, ut, illo sunt voluptas sint neque esse. Ullam vitae, veniam eveniet suscipit saepe repudiandae perspiciatis ducimus neque. Debitis recusandae, eius similique sit ipsa hic repellendus, a soluta iusto iure voluptas nobis, reprehenderit harum? Soluta culpa, molestias. Nisi dolorum vero, dignissimos quidem. Perferendis nemo explicabo in porro, cum non recusandae incidunt eaque facilis quo eius earum aspernatur suscipit aut at minima harum quas, ullam, odit corporis nisi eveniet. Molestiae in saepe ipsum libero sed deleniti, nulla suscipit. Officia mollitia et voluptate obcaecati quos quam reprehenderit ipsum, quibusdam nemo deleniti enim debitis. Voluptatibus ab deserunt, eos exercitationem officia fugiat neque placeat hic, dolor, maiores velit alias earum beatae. Temporibus velit tempore, id rem molestias alias ipsam neque magnam esse veritatis mollitia corporis recusandae maiores a, voluptatibus earum, nihil ad! Quisquam quos, odit similique harum voluptatibus nihil recusandae ullam tenetur voluptatem dolorum, sint ea quod adipisci amet veniam placeat blanditiis iure ut quaerat ipsa molestias fugiat, corporis reiciendis? Totam amet perferendis fugiat iure sed fuga tempora inventore, necessitatibus nobis debitis deleniti laborum quidem, odit ut aut. Reiciendis expedita distinctio delectus hic quia placeat nesciunt, ipsum officia officiis aliquid molestiae veritatis fugit nam impedit repudiandae suscipit, dolor. Nulla earum enim itaque dolores temporibus, consequatur reprehenderit fuga cupiditate a.</p>
+    
 
     <form>
   <div class="widget">
@@ -60,7 +60,7 @@
   </form>
   
 
-  <div class="container test">
+  <div class="container">
     <h3>Slider</h3>
     <div class="genericSlide">
       <div><img src="assets/banner/default.jpg"/></div>
@@ -159,7 +159,7 @@
         </table>
       </div>
       
-      <img class="svg"  src="assets/img/svg/arrow-right.svg" alt="">
+      <img class="svg custom-svg"  src="assets/img/svg/arrow-right.svg" alt="">
       
 
 

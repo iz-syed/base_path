@@ -126,5 +126,5 @@ $asset-base-path: '../assets' !default;
 
 }
 
-svg {width: 350px; height: 350px; border:1px solid $green}
-svg path {fill: #000 !important; stroke:red !important;}
+svg.custom-svg { width:150px; height:150px}
+svg.custom-svg path {fill: $green !important; stroke:$white !important;}
