@@ -103,12 +103,12 @@ $asset-base-path: '../assets' !default;
 
 
 // Generic Slide
-.genericSlide { margin:25px 0 35px; max-width: 650px;  margin:0 auto }
+.genericSlide {  /*max-width: 650px;*/  margin:0 auto }
 .capImg { font-size:12px; padding-top:5px; }
 
-.triangleArrow .slick-prev, .triangleArrow .slick-next { border:none; cursor:pointer; margin-top:-48px; position:absolute; top:50%; width:39px; }
-.triangleArrow .slick-prev { left:-1px; }
-.triangleArrow .slick-next { right:-1px; text-align:right; }
+.triangleArrow.slick-prev, .triangleArrow.slick-next { border:none; cursor:pointer; margin-top:-48px; position:absolute; top:50%; width:39px; }
+.triangleArrow.slick-prev { left:-1px; }
+.triangleArrow.slick-next { right:-1px; text-align:right; }
 
 
 @media screen and (max-width:540px) {
@@ -125,3 +125,6 @@ $asset-base-path: '../assets' !default;
     background-color:$pink ;
 
 }
+
+svg {width: 350px; height: 350px; border:1px solid $green}
+svg path {fill: #000 !important; stroke:red !important;}

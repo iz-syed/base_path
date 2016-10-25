@@ -52,10 +52,22 @@
     <input type="checkbox" name="checkbox-4" id="checkbox-4">
   </fieldset>
   </div>
+  <label for="test-checkbox" class="">Test Me</label>
+  <input type="checkbox" name="test-checkbox">
+  
+  <label for="test-radiobox" class="">Test Me</label>
+  <input type="radio" name="test-radiobox">
   </form>
+  
 
-  <input type="checkbox" name="">
-  <input type="radio" name="">
+  <div class="container test">
+    <h3>Slider</h3>
+    <div class="genericSlide">
+      <div><img src="assets/banner/default.jpg"/></div>
+      <div><img src="assets/banner/default.jpg"/></div>
+      <div><img src="assets/banner/default.jpg"/></div>
+    </div>
+  </div>
     
     <p>Nostrum deserunt, blanditiis sunt est quidem, ipsum provident, magni quibusdam laboriosam iusto repudiandae quas deleniti dolores obcaecati assumenda ea voluptate velit voluptatem quasi quaerat! Labore beatae quia laboriosam delectus harum dignissimos nemo, quasi quas incidunt accusantium odio, ipsum ut voluptate, sapiente expedita. Magni error, quod ipsum. Sequi minus rerum quas ullam odio atque quae aspernatur sit totam libero. Non inventore placeat magnam porro tempore perferendis totam explicabo, sit in nam similique ratione. Non iste ipsum esse culpa. Officia numquam nemo aliquid iste maxime, quis voluptates ad et natus incidunt perspiciatis vitae voluptatum facere tempore. Quasi in repudiandae id facere sapiente dolorem nobis officiis eligendi provident soluta itaque alias, explicabo praesentium, inventore odit qui fuga similique recusandae, voluptas officia distinctio molestiae. Velit ipsam autem atque ut, quas rem perferendis, ducimus at sequi nesciunt molestiae quod inventore impedit sed natus nobis magnam. Velit distinctio quod sequi voluptas, saepe cupiditate soluta quo necessitatibus voluptatum quisquam debitis animi numquam, quibusdam. Vero dignissimos consequatur laboriosam ab quibusdam architecto impedit fugiat velit fugit distinctio unde veritatis hic magnam veniam ducimus temporibus consequuntur dicta quos rem, sunt doloribus voluptate alias dolores ea. Veritatis enim, expedita ut ipsa harum quia corrupti quas cum, illum, possimus consectetur dolores adipisci unde autem ea atque sit commodi illo vel, animi similique optio veniam velit. Fugit perspiciatis quas necessitatibus, cum, possimus tempore temporibus minima, labore dolor vitae explicabo quam sequi cumque dignissimos illo dolore laudantium natus vero recusandae quasi inventore saepe vel. Enim libero in, ullam consectetur dolores animi sapiente quia officiis itaque aspernatur dolore cupiditate neque mollitia ad corporis quaerat ipsa vero obcaecati recusandae facilis natus et odio exercitationem. Perspiciatis ad, ab sequi? Sequi voluptatibus architecto voluptates quis hic dolores non impedit iste quia repellat, in consequuntur rem quam cum vero? Cum eius, eos tempore libero sit aperiam voluptates ut nostrum.</p>
     
@@ -147,6 +159,7 @@
         </table>
       </div>
       
+      <img class="svg"  src="assets/img/svg/arrow-right.svg" alt="">
       
 
 
@@ -154,5 +167,7 @@
   </div>
 
     <script src="../js/build/global.min.js"></script>
+
+    
   </body>
 </html>

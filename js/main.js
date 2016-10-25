@@ -24,6 +24,41 @@
 $(function(){
 	console.log('Ready to Launch');
 
+	// SVG Replace
+
+	jQuery('img.svg').each(function(){
+        var $img = jQuery(this);
+        var imgID = $img.attr('id');
+        var imgClass = $img.attr('class');
+        var imgURL = $img.attr('src');
+    
+        jQuery.get(imgURL, function(data) {
+            // Get the SVG tag, ignore the rest
+            var $svg = jQuery(data).find('svg');
+    
+            // Add replaced image's ID to the new SVG
+            if(typeof imgID !== 'undefined') {
+                $svg = $svg.attr('id', imgID);
+            }
+            // Add replaced image's classes to the new SVG
+            if(typeof imgClass !== 'undefined') {
+                $svg = $svg.attr('class', imgClass+' replaced-svg');
+            }
+    
+            // Remove any invalid XML tags as per http://validator.w3.org
+            $svg = $svg.removeAttr('xmlns:a');
+            
+            // Check if the viewport is set, else we gonna set it if we can.
+            if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+                $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+            }
+    
+            // Replace image with new SVG
+            $img.replaceWith($svg);
+    
+        }, 'xml');
+    
+    });
 
 
 /* Functions */
@@ -45,6 +80,7 @@ $(function(){
 			}, 70 * i);
 		});
 	}
+
 	$(window).scroll(function() {
 		animated_contents();
 	});
@@ -52,11 +88,13 @@ $(function(){
 	/* Parallex Move */
 	/*$('.circleTrust').parallax("50%", 0.1);*/
 	//$('.intro').parallax("50%", 0.85);
+
 	/* Background Image */
 	$('[data-bg]').each(function(){
 		var curBg = $(this).data('bg');
 		$(this).css('background-image','url('+curBg+')');
 	});  
+
 	/* Tab */
 	$('.tabTitle a').click(function(e){
 
@@ -67,7 +105,9 @@ $(function(){
 		$('.tabFeature').hide();
 		$('#'+tabIdentity).fadeIn(800);
 	}
-	return false;
+
+		return false;
+
 	});
 
 
@@ -100,8 +140,8 @@ $(function(){
 		dots: false,
 		arrows: true,
     	infinite: false,
-		prevArrow: '<div class="triangleArrow slick-prev"><img src="images/triangleRight.png"/></div>',
-		nextArrow: '<div class="triangleArrow slick-next"><img src="images/triangleLeft.png"/></div>',
+		prevArrow: '<div class="triangleArrow slick-prev"><img src="assets/img/svg/arrow-left.svg" class="svg"/></div>',
+		nextArrow: '<div class="triangleArrow slick-next"><img src="assets/img/svg/arrow-right.svg" class="svg" /></div>',
   		slidesToShow: 1,
   		slidesToScroll: 1,
 	});
@@ -120,9 +160,7 @@ $(function(){
 
     // jQueryUI Check box + Radio Boxes
     $('input').checkboxradio({ icon: false });
-
-
-	// $( "#files" ).selectmenu();
+	
 
 	// Anchor Target _Blank
 	$('a[href$=".pdf"]').attr('target', '_blank');
@@ -159,6 +197,8 @@ $(function(){
 	 *		<li><a href="javascript:void(0);">Value</a></li>
 	 *	</nav>
 	/**********************************************/
+
+
 
 
 
