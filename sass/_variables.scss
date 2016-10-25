@@ -18,12 +18,27 @@ $font : 'Amaranth', sans-serif;
 $size : 16px;
 $wgt : 400;
 $line : 24px;
-$white: #FFF;
 $black: #333;
 $green: #72bf45;
+$pink: #dd4287;
 
 .appear {
 	-moz-appearance:none;
 	-webkit-appearance:none;
 	appearance:none;
 }
+
+// Default Theme
+// ----------------------------------
+/*
+$documentation: (
+
+  primary:    #327eff,
+  secondary:  #32db64,
+  danger:     #f53d3d,
+  light:      #f4f4f4,
+  dark:       #222,
+
+) !default;
+
+$link-color:                 color($documentation, primary) !default;*/

@@ -33,4 +33,6 @@
 		}
 	});
 	jQuery.browser = $.browser();
+
+	
 })(jQuery);

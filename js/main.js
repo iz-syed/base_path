@@ -1,11 +1,34 @@
+	
+// Global Function Start
+	// Get OS
+	var os = [ 
+		'iphone', 
+		'ipad', 
+		'windows', 
+		'mac', 
+		'linux'];
+
+	var match = navigator.appVersion.toLowerCase().match(
+		new RegExp(os.join('|'))
+	);
+
+	var classes = match[0]+' '+$.browser.name+' Version-'+$.browser.version;
+	if (match) { 
+		$('body').addClass(classes); 
+	};
+
+// Global Function End
+
+
+	/* Ready Function */
 $(function(){
-	 alert('Hi');
+	console.log('Ready to Launch');
+
+
+
 /* Functions */
-window.onbeforeunload = function(){
-	window.scrollTo(0,0);
-}
-/* Ready Function */
-$(function(){
+	window.onbeforeunload = function(){ window.scrollTo(0,0); }
+
 	/* Body Fadein */
 	$('body').animate({opacity:1},1000);
 	/* Scroll Animation */ 
@@ -90,14 +113,13 @@ $(function(){
 		collapsible: true,
     	active: false
 	
-	});
+	}); // accordion
 
 	// jQueryUI Tabs
-    $( "#tabs" ).tabs();
+    $('#tabs').tabs();
 
     // jQueryUI Check box + Radio Boxes
-    $( "input" ).checkboxradio({ icon: false });
-
+    $('input').checkboxradio({ icon: false });
 
 
 	// $( "#files" ).selectmenu();
@@ -120,17 +142,7 @@ $(function(){
 	});
 
 
-	// Get OS
-	var os = [ 'iphone', 'ipad', 'windows', 'mac', 'linux'];
-
-	// Match OS
-	var match = navigator.appVersion.toLowerCase().match(new RegExp(os.join('|')));
-	// concordinate 
-	var classes = match[0]+' '+$.browser.name+' '+$.browser.version;
-	// add OS + Browser + Version.
-	if (match) {
-		$('body').addClass(classes);
-	};
+	
 
 	// Filter Active State
 
@@ -150,16 +162,19 @@ $(function(){
 
 
 
-});
+
 /* Resize Function */
 if(!Modernizr.touch) { 
 	$(window).resize(function(){
 		
-	});
-}
+	}); // resize
+} // Modernizr.touch
+
 /* Orientation Function */
-$(window).on("orientationchange",function(){
-	
-});
-});
+$(window).on("orientationchange",function(){ 
+
+}); // orientationchange
+
+}); // function
+
 
