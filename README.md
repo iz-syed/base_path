@@ -6,7 +6,7 @@
 =====> Project Path
 =====> npm install grunt --save-dev
 =====> npm install grunt-contrib-uglify --save-dev
-=====> npm install grunt-contrib-watch --save dev
+=====> npm install grunt-contrib-watch --save-dev
 =====> grunt
 
 => gem install sass
